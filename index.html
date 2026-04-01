@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>C.A.P.S.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h2 class="MainTitle">Разыгрывается</h2>
+    <h2 class="jokeTitle"><i>Текст карты</i></h2>
+    <div class="divGrid">
+        <div class="LeftColumn">
+            <div class="jokeCard">
+                <div class="black">Praesent bibendum eros blandit, neque faucibus, malesuada ante.</div>
+            </div>
+            <div>
+                <h2>Играют</h2>
+                <p class="scoreTable"></p>
+            </div>
+        </div>
+        <div>
+            <div class="CardsOnTable">
+                <div>
+                    <div class="white">Vivamus id metus</div>
+                </div>
+                <div>
+                    <div class="white">Mauris a lorem eu tortor</div>
+                    <div style="transform: translateY(-90px);" class="white">Proin sit amet ex ac libero</div>
+                    <div style="transform: translateY(-180px);" class="white ">Nullam elementum est</div>
+                </div>
+                <div>
+                    <div class="white">Proin aliquam massa non orci hendrerit</div>
+                </div>
+            </div>
+
+            <h2>Ваши карточки</h2>
+            <div class="overlay2"></div>
+            <div class="CardsInHand">
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+                <div class="white">Кнопка 1</div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+        <div style="  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        scale: 1.5;">
+            <input placeholder="Nickname" class="nick" autocomplete="on" maxlength="15">
+            <input placeholder="IP Address" class="ipAddress" autocomplete="on">
+            <!--<input placeholder="Game Code" class="gameCode" autocomplete="off" maxlength="6">-->
+            <button class="Connect">Connect</button>
+            <button class="Start">Start</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@10.0.0/dist/browser/signalr.min.js" integrity="sha256-EN12gUIeRjilWjNnporA6sGXO+G0RxuRsbniMGuwsFA=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="vanilla-toast.min.js"></script>
