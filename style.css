@@ -86,11 +86,9 @@ h2 {
     height: 396px;
     position: absolute;
     border-radius: 10px;
-    z-index: 1;
 }
 
 .white {
-    position: relative;
     background-color: whitesmoke;
     border-color: darkslategray;
     font-family: verdana;
@@ -106,15 +104,6 @@ h2 {
     font-size: 12px;
     hyphens: auto;
     box-sizing: border-box;
-}
-
-.setName {
-    font-size: 9px;
-    text-align: right;
-    position: absolute;
-    bottom: 7px;
-    right: 7px;
-    opacity: 0.25;
 }
 
 .white:active {

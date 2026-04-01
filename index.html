@@ -61,14 +61,14 @@
         scale: 1.5;">
             <input placeholder="Nickname" class="nick" autocomplete="on" maxlength="15">
             <input placeholder="IP Address" class="ipAddress" autocomplete="on">
-            <!--<input placeholder="Game Code" class="gameCode" autocomplete="off" maxlength="6">-->
-            <button class="Connect">Connect</button>
-            <button class="Start">Start</button>
+            <input placeholder="Game Code" class="gameCode" autocomplete="off" maxlength="6">
+            <button onclick="Open()">Connect</button>
+            <button onclick="SendStart()">Start</button>
         </div>
     </div>
 </body>
-</html>
 
-<script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@10.0.0/dist/browser/signalr.min.js" integrity="sha256-EN12gUIeRjilWjNnporA6sGXO+G0RxuRsbniMGuwsFA=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-<script src="vanilla-toast.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="vanilla-toast.min.js"></script>
+
+</html>
