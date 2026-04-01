@@ -1,0 +1,127 @@
+body {
+    max-width: 100px;
+}
+
+h2 {
+    display: block;
+    margin: 7px;
+    width: 10000px;
+}
+
+.CardsInHand {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: rgb(224, 224, 224);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.CardsOnTable {
+    display: flex;
+    flex-direction: row;
+    height: 375px;
+    background: linear-gradient(to right, rgb(224, 224, 224), #ffffff);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    column-gap: 5px;
+}
+
+.LeftColumn {
+    width: 190px;
+}
+
+.black {
+    background-color: rgb(27, 27, 27);
+    border-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-family: verdana;
+    text-align: left;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 9px;
+    width: calc(53px * 2.8);
+    height: calc(53px * 3.5);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.divGrid {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    transform-origin: top left;
+    padding: 15px;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.jokeCard {
+    height: 389px;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 782px;
+    height: 396px;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.white {
+    position: relative;
+    background-color: whitesmoke;
+    border-color: darkslategray;
+    font-family: verdana;
+    text-align: left;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 18px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: calc(53px * 2.8);
+    height: calc(53px * 3.5);
+    font-size: 12px;
+    hyphens: auto;
+    box-sizing: border-box;
+}
+
+.setName {
+    font-size: 9px;
+    text-align: right;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    opacity: 0.25;
+}
+
+.white:active {
+    background-color: white;
+}
+
+.white:hover {
+    background-color: lightgray;
+    z-index: 3000;
+}
